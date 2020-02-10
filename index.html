@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+            <label for="new-task">To do list</label><input id="new-task" type="text"><button>Add</button>
+          <h3>Список дел</h3>
+          <ul id="incomplete-tasks">
+            <li>
+                <input type="checkbox">
+                <label>Сделать домашку</label>
+                <input type="text">
+                <button class="edit"><i class="fas fa-plus"></i></button>
+                <button class="delete"><i class="fas fa-trash"></i></button>
+            </li>
+          </ul>
+          <h3>Завершенные дела</h3>
+          <ul id="completed-tasks">
+            <li><input type="checkbox" checked><label>Выпить кофе</label>
+                <input type="text">
+                <button class="edit">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <button class="delete">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </li>
+          </ul>
+        </div>
+        <script src="https://kit.fontawesome.com/a7d60bce11.js" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+</body>
+</html>
